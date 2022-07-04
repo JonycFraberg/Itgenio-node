@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Car from './Car/Car.js';
 
 function App() {
   const divStyle = {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
@@ -19,12 +20,12 @@ function App() {
           Learn React
         </a>
         
-      </header>
-      <main>
-        <div style={divStyle}>
-          Hello world
-        </div>
-        </main>
+      </header> */}
+     <Car name = {"Ford"} year={2018}> 
+      <p>Color</p>
+     </Car>
+     <Car name = {"Audi"} year={2014}/>
+     <Car name = {"Volga"} year={1990}/>
     </div>
     </>
   );
