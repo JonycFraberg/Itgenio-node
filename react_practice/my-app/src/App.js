@@ -1,11 +1,22 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Car from './Car/Car.js';
+import Login from './Training/login.js';
+import Notifications from './Training/notifications';
+import NameForm from './Training/input';
+
 
 function App() {
-  const divStyle = {
-    'text-align':'center'
+  // const divStyle = {
+  //   'text-align':'center'
+  // }
+  const handleClick = (e,text) =>{
+    e.preventDefault();
+    console.log("Link clicked")
+    console.log(text)
   }
+  const unreadNotifications = ["new email","new message","new message 2"]
   return (
     <>
     <div className="App">
@@ -26,7 +37,17 @@ function App() {
      </Car>
      <Car name = {"Audi"} year={2014}/>
      <Car name = {"Volga"} year={1990}/>
-    </div>
+    <Login isValidCredentials={false}/>
+    <Notifications notes = {unreadNotifications}/>
+    <a href='#' onClick ={(e) => handleClick(e,"textt")}>
+      onClick here
+    </a>
+
+      </div>
+      <NameForm/>
+
+
+
     </>
   );
 

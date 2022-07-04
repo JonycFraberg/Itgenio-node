@@ -4,8 +4,7 @@ import React from "react";
 //         <h2>This is car!</h2>
 //     )
 // }
-let number = 1
-
+let number = 0
 const Car = (props) =>(
     <div>
        <h2>Car name: {props.name}</h2>
