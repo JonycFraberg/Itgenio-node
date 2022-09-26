@@ -9,7 +9,9 @@ let week = {
   6: "Saturday",
   7: "Sunday",
 };
-console.log(week[1]);
+let dateNow = new Date();
+let dayNow = dateNow.getDay();
+
 // Задание 2
 let str = "abcde";
 console.log(str[0]);
