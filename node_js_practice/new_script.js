@@ -16,7 +16,7 @@ let dayNow = dateNow.getDay();
 let str = "abcde";
 console.log(str[0]);
 console.log(str[2]);
-console.log(str[3]);
+console.log(str[4]);
 // Задание 3
 let array = [1, 2, 3, 4, 5];
 for (let elem in array) {
@@ -29,7 +29,7 @@ let obj = {
   Киев: "Украина",
 };
 for (const key in obj) {
-  console.log(`${key} - это ${obj[key]}`);
+  console.log(`${key} - это ${obj[key]}.`);
 }
 // Задание 5
 let arr = [];
