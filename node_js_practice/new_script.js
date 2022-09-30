@@ -11,6 +11,7 @@ let week = {
 };
 let dateNow = new Date();
 let dayNow = dateNow.getDay();
+console.log(daysOfWeek[dayNow]);
 
 // Задание 2
 let str = "abcde";
